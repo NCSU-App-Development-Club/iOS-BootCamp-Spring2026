@@ -1,0 +1,33 @@
+## Build artifacts
+build/
+DerivedData/
+
+## Xcode user-specific files (keeps your teammates from seeing your open tabs)
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+## Objective-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Bundler (if using Fastlane or CocoaPods)
+.bundle/
+vendor/bundle
+
+## Swift Package Manager
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+## Misc
+.DS_Store
+*.swp
+*.lock
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
