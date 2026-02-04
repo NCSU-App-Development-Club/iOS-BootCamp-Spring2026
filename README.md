@@ -8,3 +8,9 @@ Welcome to the iOS Bootcamp! Please follow these steps to set up your project:
     [New branch instructions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
 
 3. Open Xcode and create a new iOS App project titled **CodeBreaker** within your cloned directory.
+
+## Materials
+
+https://cs193p.stanford.edu/
+
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rPHblRXKsJCQs8TLGpiCTrG)
