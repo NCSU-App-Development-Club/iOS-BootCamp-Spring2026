@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		FD16D43C2F33F27F00C27459 /* CodeBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD16D4532F33FB0200C27459 /* CodeBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FD16D43E2F33F27F00C27459 /* CodeBreaker */ = {
+		FD16D4552F33FB0200C27459 /* CodeBreaker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CodeBreaker;
 			sourceTree = "<group>";
@@ -19,7 +19,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FD16D4392F33F27F00C27459 /* Frameworks */ = {
+		FD16D4502F33FB0200C27459 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FD16D4332F33F27F00C27459 = {
+		FD16D44A2F33FB0200C27459 = {
 			isa = PBXGroup;
 			children = (
-				FD16D43E2F33F27F00C27459 /* CodeBreaker */,
-				FD16D43D2F33F27F00C27459 /* Products */,
+				FD16D4552F33FB0200C27459 /* CodeBreaker */,
+				FD16D4542F33FB0200C27459 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FD16D43D2F33F27F00C27459 /* Products */ = {
+		FD16D4542F33FB0200C27459 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD16D43C2F33F27F00C27459 /* CodeBreaker.app */,
+				FD16D4532F33FB0200C27459 /* CodeBreaker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD16D43B2F33F27F00C27459 /* CodeBreaker */ = {
+		FD16D4522F33FB0200C27459 /* CodeBreaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD16D4472F33F28000C27459 /* Build configuration list for PBXNativeTarget "CodeBreaker" */;
+			buildConfigurationList = FD16D45E2F33FB0400C27459 /* Build configuration list for PBXNativeTarget "CodeBreaker" */;
 			buildPhases = (
-				FD16D4382F33F27F00C27459 /* Sources */,
-				FD16D4392F33F27F00C27459 /* Frameworks */,
-				FD16D43A2F33F27F00C27459 /* Resources */,
+				FD16D44F2F33FB0200C27459 /* Sources */,
+				FD16D4502F33FB0200C27459 /* Frameworks */,
+				FD16D4512F33FB0200C27459 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FD16D43E2F33F27F00C27459 /* CodeBreaker */,
+				FD16D4552F33FB0200C27459 /* CodeBreaker */,
 			);
 			name = CodeBreaker;
 			packageProductDependencies = (
 			);
 			productName = CodeBreaker;
-			productReference = FD16D43C2F33F27F00C27459 /* CodeBreaker.app */;
+			productReference = FD16D4532F33FB0200C27459 /* CodeBreaker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FD16D4342F33F27F00C27459 /* Project object */ = {
+		FD16D44B2F33FB0200C27459 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					FD16D43B2F33F27F00C27459 = {
+					FD16D4522F33FB0200C27459 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = FD16D4372F33F27F00C27459 /* Build configuration list for PBXProject "CodeBreaker" */;
+			buildConfigurationList = FD16D44E2F33FB0200C27459 /* Build configuration list for PBXProject "CodeBreaker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FD16D4332F33F27F00C27459;
+			mainGroup = FD16D44A2F33FB0200C27459;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = FD16D43D2F33F27F00C27459 /* Products */;
+			productRefGroup = FD16D4542F33FB0200C27459 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD16D43B2F33F27F00C27459 /* CodeBreaker */,
+				FD16D4522F33FB0200C27459 /* CodeBreaker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD16D43A2F33F27F00C27459 /* Resources */ = {
+		FD16D4512F33FB0200C27459 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FD16D4382F33F27F00C27459 /* Sources */ = {
+		FD16D44F2F33FB0200C27459 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FD16D4452F33F28000C27459 /* Debug */ = {
+		FD16D45C2F33FB0400C27459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -188,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		FD16D4462F33F28000C27459 /* Release */ = {
+		FD16D45D2F33FB0400C27459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +244,7 @@
 			};
 			name = Release;
 		};
-		FD16D4482F33F28000C27459 /* Debug */ = {
+		FD16D45F2F33FB0400C27459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -275,7 +275,7 @@
 			};
 			name = Debug;
 		};
-		FD16D4492F33F28000C27459 /* Release */ = {
+		FD16D4602F33FB0400C27459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -309,25 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD16D4372F33F27F00C27459 /* Build configuration list for PBXProject "CodeBreaker" */ = {
+		FD16D44E2F33FB0200C27459 /* Build configuration list for PBXProject "CodeBreaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD16D4452F33F28000C27459 /* Debug */,
-				FD16D4462F33F28000C27459 /* Release */,
+				FD16D45C2F33FB0400C27459 /* Debug */,
+				FD16D45D2F33FB0400C27459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD16D4472F33F28000C27459 /* Build configuration list for PBXNativeTarget "CodeBreaker" */ = {
+		FD16D45E2F33FB0400C27459 /* Build configuration list for PBXNativeTarget "CodeBreaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD16D4482F33F28000C27459 /* Debug */,
-				FD16D4492F33F28000C27459 /* Release */,
+				FD16D45F2F33FB0400C27459 /* Debug */,
+				FD16D4602F33FB0400C27459 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FD16D4342F33F27F00C27459 /* Project object */;
+	rootObject = FD16D44B2F33FB0200C27459 /* Project object */;
 }
