@@ -10,16 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-            Text("Welcome to CS193p!")
-                .foregroundStyle(.green)
-            Text("Greetings!")
-            Circle()
+            pegs(colors: [Color.red, .green, .green, .yellow])
+            pegs(colors: [.red, .blue, .green, .red])
+            pegs(colors: [.red, .yellow, .green, .blue])
+        }.padding()
+    }
+    
+    func pegs(colors: Array<Color>) -> some View {
+        HStack {
+            ForEach(colors.indices, id: \.self, content: { i in
+                RoundedRectangle(cornerRadius: 10)
+                    .aspectRatio(1, contentMode: .fit)
+                    .foregroundStyle(colors[i])
+            })
+            MatchMarkers(matches: [.exact, .inexact, .nomatch, .exact])
         }
-        .font(.largeTitle) // vstack can't proccess this. it passes it on
-        .padding() // vstack can proccess this
     }
 }
+
 
 #Preview {
     ContentView()
