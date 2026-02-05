@@ -11,11 +11,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Welcome to CS193p!")
+                .foregroundStyle(.green)
+            Text("Greetings!")
+            Circle()
         }
-        .padding()
+        .font(.largeTitle) // vstack can't proccess this. it passes it on
+        .padding() // vstack can proccess this
     }
 }
 

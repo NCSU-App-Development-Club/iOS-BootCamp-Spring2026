@@ -11,7 +11,11 @@ import SwiftUI
 struct CodeBreakerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // helicopter
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
