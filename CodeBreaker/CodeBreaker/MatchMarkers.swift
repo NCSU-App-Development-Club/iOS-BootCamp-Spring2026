@@ -15,44 +15,30 @@ enum Match {
 
 struct MatchMarkers: View {
     var matches: Array<Match>
-    
     var body: some View {
-        HStack {
-            
-            // First column pegs
-            VStack {
-                if matches.indices.contains(0) { matchMaker(peg: 0)
-                }
-                
-                if matches.indices.contains(1) { matchMaker(peg: 1)
-                }
-            }
-            
-            // Second column pegs
-            VStack {
-                if matches.indices.contains(2) { matchMaker(peg: 2)
-                }
-                
-                if matches.indices.contains(3) { matchMaker(peg: 3)
-                }
-            }
-            
-            // Third column pegs
-            VStack {
-                if matches.indices.contains(4) { matchMaker(peg: 4)
-                }
-                
-                if matches.indices.contains(5) { matchMaker(peg: 5)
+        let pegCount = matches.count
+        let columns = (pegCount + 1) / 2
+        HStack(alignment: .top) {
+            ForEach(0..<columns, id: \.self) { column in
+                VStack {
+                    ForEach(0..<2) { row in
+                        let pegIndex = column * 2 + row
+                        if matches.indices.contains(pegIndex) {
+                            matchMarker(peg: pegIndex)
+                        }
+                    }
                 }
             }
         }
     }
+  
     
     
-    func matchMaker(peg: Int) -> some View {
+    func matchMarker(peg: Int) -> some View {
         let exactCount: Int = matches.count(where: { match in
             match == .exact
         })
+
         
         let foundCount: Int = matches.count(where: { match in
             match != .nomatch
@@ -62,20 +48,25 @@ struct MatchMarkers: View {
             .fill(exactCount > peg ? Color.black : Color.clear)
             .strokeBorder(foundCount > peg ? Color.black : Color.clear, lineWidth: 2)
             .aspectRatio(1, contentMode: .fit)
+            .frame(maxWidth: 50)
+        
     }
 }
 
 struct MatchMarkersPreview: View {
     var matches: Array<Match>
     var body: some View {
+        // adding dummy pegs
         HStack {
             ForEach(0..<matches.count, id: \.self) { _ in
                 Circle()
                     .foregroundStyle(.black)
-                    .aspectRatio(1, contentMode: .fit)
             }
             
+            // does checking for each match for peg color
             MatchMarkers(matches: matches)
+                .aspectRatio(1, contentMode: .fit)
+            
         }
     }
 }
