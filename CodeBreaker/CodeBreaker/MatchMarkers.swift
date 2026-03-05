@@ -18,22 +18,35 @@ struct MatchMarkers: View {
     
     var body: some View {
         HStack {
+            // First column
             VStack {
-                matchMaker(peg: 0)
-                matchMaker(peg: 1)
+                if matches.indices.contains(0) { matchMaker(peg: 0)
+                }
+                
+                if matches.indices.contains(1) { matchMaker(peg: 1)
+                }
             }
             
+            // Second column
             VStack {
-                matchMaker(peg: 2)
-                matchMaker(peg: 3)
+                if matches.indices.contains(2) { matchMaker(peg: 2)
+                }
+                
+                if matches.indices.contains(3) { matchMaker(peg: 3)
+                }
             }
             
+            // Third column
             VStack {
-                matchMaker(peg: 4)
-                matchMaker(peg: 5)
+                if matches.indices.contains(4) { matchMaker(peg: 4)
+                }
+                
+                if matches.indices.contains(5) { matchMaker(peg: 5)
+                }
             }
         }
     }
+    
     
     func matchMaker(peg: Int) -> some View {
         let exactCount: Int = matches.count(where: { match in
