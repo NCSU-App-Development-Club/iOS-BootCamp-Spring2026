@@ -18,7 +18,8 @@ struct MatchMarkers: View {
     
     var body: some View {
         HStack {
-            // First column
+            
+            // First column pegs
             VStack {
                 if matches.indices.contains(0) { matchMaker(peg: 0)
                 }
@@ -27,7 +28,7 @@ struct MatchMarkers: View {
                 }
             }
             
-            // Second column
+            // Second column pegs
             VStack {
                 if matches.indices.contains(2) { matchMaker(peg: 2)
                 }
@@ -36,7 +37,7 @@ struct MatchMarkers: View {
                 }
             }
             
-            // Third column
+            // Third column pegs
             VStack {
                 if matches.indices.contains(4) { matchMaker(peg: 4)
                 }
@@ -65,8 +66,7 @@ struct MatchMarkers: View {
 }
 
 struct MatchMarkersPreview: View {
-    var matches: [Match]
-
+    var matches: Array<Match>
     var body: some View {
         HStack {
             ForEach(0..<matches.count, id: \.self) { _ in
@@ -82,6 +82,8 @@ struct MatchMarkersPreview: View {
 
 #Preview {
     VStack(alignment: .leading) {
+        
+        // TODO: Fix error where if only one peg on column its bigger than rest
         
         // 3 matches
         MatchMarkersPreview(matches: [.exact, .inexact, .nomatch])
